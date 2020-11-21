@@ -16,6 +16,7 @@ You will also see any lint errors in the console.
 ...
 
 ### 01 CRA 후 step 01 
-yarn add react-router-dom\
-yarn add node-sass@4.14.1\
+yarn add react-router-dom   //for router \
+yarn add node-sass@4.14.1   //for style\
+yarn add qs                 //for query to string
 
