@@ -3,7 +3,7 @@ import { Route, Link } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
 import "./style/nav.scss";
-import Profile from "./components/Profile";
+import Profiles from "./components/Profiles";
 
 const App = () => {
   return (
@@ -18,17 +18,14 @@ const App = () => {
           <Link to="/about">소개</Link>
         </li>
         <li>
-          <Link to="./profile/gildong">길동'프로필</Link>
-        </li>
-        <li>
-          <Link to="./profile/gilseo">길서'프로필</Link>
+          <Link to="./profiles">프로필</Link>
         </li>
       </ul>
       <hr />
       <Route path="/" component={Home} exact={true} />
       <Route path={["/about", "/info"]} component={About} />
       {/* <Route path="/info" component={About}/>  react v5 이전 버전*/}
-      <Route path="/profile/:username" component={Profile} />
+      <Route path="/profiles" component={Profiles} />
     </div>
   );
 };
