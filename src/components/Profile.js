@@ -1,5 +1,6 @@
 //URL 파라미터 방식
 import React from "react";
+import WithRouter from "./WithRouter";
 
 const data = {
   gildong: {
@@ -24,6 +25,8 @@ const Profile = ({ match }) => {
         {username}({profile.name})
       </h3>
       <p>{profile.description}</p>
+
+      <WithRouter />
     </div>
   );
 };
