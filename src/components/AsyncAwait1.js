@@ -1,17 +1,11 @@
 import React from "react";
 
-const AsyncAwait1 = () => {
-  const result = 0;
-  const increase = (number, callback) => {
-    setTimeout(() => {
-      const result = number + 10;
-      callback && callback(result);
-    }, 1000);
-  };
-  increase(0, (result) => {
-    alert(result);
-  });
-  return <div>{result}</div>;
+const asyncAwait1 = () => {
+  return (
+    <div>
+      <p>hello</p>
+    </div>
+  );
 };
 
-export default AsyncAwait1;
+export default asyncAwait1;

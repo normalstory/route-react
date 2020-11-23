@@ -30,10 +30,10 @@ const Asynchronous = () => {
         render={() => <div>비동기 테스트 항목을 선택해주세요</div>}
       />
 
-      <Route path={`${path}/:setTimeout`} component={AsyncSetTime1} />
-      <Route path={`${path}/:call-back`} component={AsyncCallback1} />
-      <Route path={`${path}/:promise01`} component={AsyncPromise1} />
-      <Route path={`${path}/:async-await1`} component={AsyncAwait1} />
+      <Route exact path={`${path}/:setTimeout`} component={AsyncSetTime1} />
+      <Route exact path={`${path}/:call-back`} component={AsyncCallback1} />
+      <Route exact path={`${path}/:promise01`} component={AsyncPromise1} />
+      <Route exact path={`${path}/:async-await1`} component={AsyncAwait1} />
     </div>
   );
 };

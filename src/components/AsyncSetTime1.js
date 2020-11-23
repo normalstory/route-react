@@ -8,12 +8,7 @@ const AsyncSetTime1 = () => {
   };
 
   setTimeout(statePage === "대기 중..." && printMe, 3000);
-  return (
-    <div>
-      <p>hi</p>
-      <p>{statePage}</p>
-    </div>
-  );
+  return <div>AsyncSetTime1 : {statePage}</div>;
 };
 
 export default AsyncSetTime1;
