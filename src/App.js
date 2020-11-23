@@ -7,6 +7,7 @@ import Profiles from "./components/Profiles";
 import HistorySample from "./components/HistorySample";
 import Asynchronous from "./components/Asynchronous";
 import NewsApi from "./components/NewsApi";
+import NewsFeed from "./components/NewsFeed";
 
 const App = () => {
   return (
@@ -30,6 +31,9 @@ const App = () => {
           <Link to="/asynchronous">비동기</Link>
         </li>
         <li>
+          <Link to="/newsApi">뉴스api</Link>
+        </li>
+        <li>
           <Link to="/newsFeed">뉴스피드</Link>
         </li>
       </ul>
@@ -41,7 +45,8 @@ const App = () => {
         <Route path="/profiles" component={Profiles} />
         <Route path="/history" component={HistorySample} />
         <Route path="/asynchronous" component={Asynchronous} />
-        <Route path="/newsFeed" component={NewsApi} />
+        <Route path="/newsApi" component={NewsApi} />
+        <Route path="/newsFeed" component={NewsFeed} />
 
         <Route
           render={({ location }) => (
