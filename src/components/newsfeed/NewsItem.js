@@ -31,13 +31,23 @@ const NewsItemBlock = styled.div`
   }
 `;
 
+const samArticle = {
+  title: "제목",
+  description: "내용",
+  url: "https://google.com",
+  urlToImage: "https://via.placeholder.com/160",
+};
+
 const NewsItem = ({ article }) => {
   const { title, description, url, urlToImage } = article;
   return (
     <NewsItemBlock>
       <div className="thumbnail">
         <a href={url} target="_blank" rel="noopener noreferrer">
-          <img src={urlToImage} alt="thumbnail" />
+          <img
+            src={!urlToImage ? samArticle.urlToImage : urlToImage}
+            alt="thumbnail"
+          />
         </a>
       </div>
       <div className="contents">
