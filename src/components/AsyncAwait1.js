@@ -27,7 +27,7 @@ const AsyncAwait1 = () => {
       <button onClick={onClick}>불러오기</button>
       <br />
       {data && (
-        <textarea row={7} value={JSON.stringify(data, null, 2)} readOnly />
+        <textarea rows={7} value={JSON.stringify(data, null, 2)} readOnly />
       )}
     </div>
   );
